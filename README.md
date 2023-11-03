@@ -15,6 +15,7 @@ cd veselayaNarezkaPDFfront; npm install; cd ./
 ```bash
 cd veselayaNarezkaPDF; npm run dev; cd ./
 ```
+### запустите фронт
 ```bash
 cd veselayaNarezkaPDFfront; npm run start; cd ./
 ```
