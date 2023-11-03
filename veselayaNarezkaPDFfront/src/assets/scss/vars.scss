@@ -1,0 +1,38 @@
+%layout-box {
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  box-shadow: 0 22px 106px rgba(0, 0, 0, 0.07),
+  0 9.19107px 44.2843px rgba(0, 0, 0, 0.0503198),
+  0 4.91399px 23.6765px rgba(0, 0, 0, 0.0417275),
+  0 2.75474px 13.2728px rgba(0, 0, 0, 0.035),
+  0 1.46302px 7.04911px rgba(0, 0, 0, 0.0282725),
+  0 0.608796px 2.93329px rgba(0, 0, 0, 0.0196802);
+}
+%button-box {
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  &:focus-visible {
+    border: 4px solid #9abbce;
+  }
+}
+%input-box {
+  border-radius: 10px;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+
+$background-basic: rgb(207, 226, 253);
+$background-layout: white;
+$background-button-submit: #1890FF;
+$background-underline-wrapper: rgb(214, 214, 214);
+$background-underline-focus: #1890FF;
+
+$text-color-main: #1890FF;
+$text-color-button-submit: white;
+
+$border-color-button-focus: #9abbce;
