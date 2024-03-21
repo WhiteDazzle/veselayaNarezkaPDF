@@ -14,7 +14,7 @@ const SignInForm = ({setIsAuthenticated}: {setIsAuthenticated: (value: boolean) 
   const handleSubmit = async (e: any) => {
     const response = await logInProfile(nameValue, passwordValue)
     if (response?.errors) setServerValidation(response.errors)
-    if (response.success) setIsAuthenticated(true)
+    if (response?.success) setIsAuthenticated(true)
   }
   
   const setServerValidation = (errors: {[key: string]: string}) => {
