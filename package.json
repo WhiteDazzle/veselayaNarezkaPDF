@@ -1,0 +1,24 @@
+{
+  "name": "@veselayanarezkapdf",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "build": "npm run build -w=@veselayanarezkapdf/backend && npm run build -w=@veselayanarezkapdf/frontend",
+    "dev": "concurrently \"npm:dev:backend\" \"npm:dev:frontend\"",
+    "dev:backend": "npm run dev -w=@veselayanarezkapdf/backend",
+    "dev:frontend": "npm run start -w=@veselayanarezkapdf/frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:WhiteDazzle/@veselayanarezkapdf.git"
+  },
+  "keywords": [],
+  "author": "M.V.Zadroga",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}

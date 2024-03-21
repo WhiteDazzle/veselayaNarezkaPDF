@@ -1,12 +1,13 @@
 {
-  "name": "veselayanarezkadetey",
+  "name": "@veselayanarezkapdf/backend",
   "version": "0.1.0",
   "description": "",
-  "main": "veselayaNarezkaDetey.js",
+  "main": "dist/veselayaNarezkaPDF.js",
   "scripts": {
     "build": "npx tsc",
-    "start": "node dist/veselayaNarezkaPDF.js",
-    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/veselayaNarezkaPDF.js\""
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/veselayaNarezkaPDF.js\"",
+    "dev:ts-node": "TODO: use ts-node here",
+    "start": "node dist/veselayaNarezkaPDF.js"
   },
   "author": "M.V.Zadroga",
   "license": "ISC",
