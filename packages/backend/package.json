@@ -1,18 +1,20 @@
 {
-  "name": "veselayanarezkadetey",
+  "name": "@veselayanarezkapdf/backend",
   "version": "0.1.0",
   "description": "",
-  "main": "veselayaNarezkaDetey.js",
+  "main": "dist/veselayaNarezkaPDF.js",
   "scripts": {
     "build": "npx tsc",
-    "start": "node dist/veselayaNarezkaPDF.js",
-    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/veselayaNarezkaPDF.js\""
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/veselayaNarezkaPDF.js\"",
+    "dev:ts-node": "TODO: use ts-node here",
+    "start": "node dist/veselayaNarezkaPDF.js"
   },
   "author": "M.V.Zadroga",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
     "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-fileupload": "^1.4.1",
@@ -24,6 +26,7 @@
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.5",
+    "@types/cors": "^2.8.17",
     "@types/express": "^4.17.18",
     "@types/express-fileupload": "^1.4.3",
     "@types/node": "^20.8.1",
